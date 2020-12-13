@@ -64,4 +64,9 @@ public class ComplainController {
 			System.out.println("데이터 삭제 성공!");
 		return "redirect:../list";
 	}
+	
+	@RequestMapping(value = "/login")
+	public String login(String t,Model model) {
+		return "login";
+	}
 }

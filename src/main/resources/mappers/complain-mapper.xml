@@ -8,8 +8,7 @@
 	</insert>
 	<update id="updateComplain">
 		update COMPLAIN
-		set type=#{type}, name=#{name}, context=#{context},
-		where seq=#{seq}
+		set type=#{type}, name=#{name}, context=#{context} where seq=#{seq}
 	</update>
 	<delete id="deleteComplain">
 		delete from COMPLAIN where seq=#{seq}
