@@ -7,9 +7,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>free board</title>
+<link href="<c:url value="/resources/css/stylesheet.css"/>" rel="stylesheet" >
 </head>
 <body>
 <h1>자유게시판</h1>
+<div>
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
@@ -21,7 +23,7 @@
 	<th>Delete</th>
 </tr>
 <c:forEach items="${list}" var="u">
-	<tr>
+	<tr class="alt">
 		<td>${u.getSeq()}</td>
 		<td>${u.getType()}</td>
 		<td>${u.getName()}</td>
@@ -33,5 +35,6 @@
 </c:forEach>
 </table>
 <br/><a href="add">Add New Post</a>
+</div>
 </body>
 </html>
